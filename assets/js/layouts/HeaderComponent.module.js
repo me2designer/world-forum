@@ -20,7 +20,7 @@ class HeaderComponent extends HTMLElement {
     this.innerHTML = `
         <!-- #header -->
         <header id="header" class="header" role="banner">
-          <div class="inner">
+          
             <h1 class="header-logo">
               <a class="header-logo__link" href="/">
                 <img class="logo" src="https://placehold.co/270x80" alt="제10차 세계한인정치인포럼" />
@@ -164,8 +164,7 @@ class HeaderComponent extends HTMLElement {
               </ul>
             </nav>
             <div class="gnb-overlay"></div>
-            <!-- //GNB -->
-          </div>
+            <!-- //GNB -->          
         </header>
         <!-- //#header -->
       `;

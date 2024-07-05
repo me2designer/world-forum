@@ -1,0 +1,61 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/****************************************************************************
+    서브메뉴 상단 비주얼 영역
+****************************************************************************/
+.c-page-visual {height: 37rem;background-size: cover;}
+.c-page-visual-header {position: absolute;left:50%;bottom:8rem;transform: translateX(-50%);}
+.c-page-visual-header__title {font-size: 4rem;font-weight: 900;color: #fff;}
+
+/* medium devices  */ 
+@media (max-width: 991.98px) { 
+  .c-page-visual {height: 23rem}
+  .c-page-visual-header {bottom: 5rem;}
+}
+
+/****************************************************************************
+    페이지 바로가기
+****************************************************************************/
+.c-site-path {height: 5.4rem;background-color: #235fa7;    border-top: solid 1px #1c4b83; border-bottom: solid 1px #1c4b83;}
+
+/* medium devices  */ 
+@media (max-width: 991.98px) { 
+  .c-site-path {height: 5.2rem}
+}
+
+/****************************************************************************
+    페이지 제목
+****************************************************************************/
+.c-page-title {margin-bottom: 6rem;}
+.c-page-title-header { padding: 4rem 0 2rem 0; text-align: center; border-bottom: solid 1px #bfbfbf; }
+.c-page-title-header__title .txt-kr {display: block;margin-bottom: 1rem;;font-size: 3.5rem;font-weight: 900;line-height: 1em;}
+.c-page-title-header__title .txt-en {display: block;font-size: 2rem;}
+
+/* medium devices  */ 
+@media (max-width: 991.98px) { 
+  .c-page-title .inner {padding: 0;}
+}
+
+/****************************************************************************
+    아카이브 공통 탭 메뉴
+****************************************************************************/
+.c-archive-tab-menu {margin-bottom: 1.5rem;}
+.c-archive-tab-menu .list-tab {display: flex;justify-content: space-between;border: 1px solid #ccc;}
+.c-archive-tab-menu .list-tab__item {flex: 1;border-left:1px solid #ccc;background-color: #eee;}
+.c-archive-tab-menu .list-tab__item:first-child {border-left:0}
+.c-archive-tab-menu .list-tab__item:hover {background-color: #777;}
+.c-archive-tab-menu .list-tab__item--is-active {background-color: #4573B8 !important;}
+.c-archive-tab-menu .link-tab {display:flex;align-items: center;justify-content: center;height:4.6rem;;font-weight: bold;}
+.c-archive-tab-menu .list-tab__item:hover .link-tab {color: #fff;}
+.c-archive-tab-menu .list-tab__item--is-active .link-tab {color: #fff;}
+
+/* medium devices  */ 
+@media (max-width: 991.98px) { 
+  .c-archive-tab-menu .list-tab {display: grid; grid-template-columns: 1fr 1fr;border:0;}
+  .c-archive-tab-menu .list-tab__item--all { grid-column: span 2;border-top: 1px solid #ccc;border-right: 1px solid #ccc;}
+  .c-archive-tab-menu .list-tab__item {border-bottom: 1px solid #ccc;}
+  .c-archive-tab-menu .list-tab__item:nth-child(1n+1) { border-right: 1px solid #ccc }
+  .c-archive-tab-menu .list-tab__item:nth-child(2n+1) {border-left: 0; border-right: 1px solid #ccc; }
+  .c-archive-tab-menu .list-tab__item:nth-child(2n+2):last-child { border-right: 1px solid #ccc }
+}

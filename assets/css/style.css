@@ -9,3 +9,9 @@
 /* Layout */
 @import url("layouts/frame.css");
 @import url("layouts/header.css");
+
+/* Components */
+@import url("components/layouts.css");
+
+/* Pages */
+@import url("pages/archive.css");

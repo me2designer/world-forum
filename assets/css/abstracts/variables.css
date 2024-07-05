@@ -1,7 +1,9 @@
+/* CSS Document */
+@charset "UTF-8";
+
 :root {
-  /* Layouts */
-  --inner-padding:              0.8rem;
-  --inner-width:                calc(120rem + var(--inner-padding) * 2);    
+  /* Layouts */  
+  --inner-width:                120rem;    
 
   /* Fonts */
   --font-size:                  1.6rem;

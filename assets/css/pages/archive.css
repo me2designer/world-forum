@@ -1,0 +1,22 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/****************************************************************************
+    역대포럼 목록
+****************************************************************************/
+.section-forums {position: relative;}
+.section-forums .list-forums {display: grid;grid-template-columns: 1fr 1fr;position: relative;}
+.section-forums .list-forums__item {display: grid;;grid-template-columns: 20rem 1fr; gap: 2rem;;padding: 4rem 0;position: relative;}
+.section-forums .list-forums__item:nth-child(odd)::after {content: "";position: absolute;left:0;top:0;width: 200%;;border-top: 1px solid #ccc;}
+.section-forums .list-forums__item:nth-child(odd):last-child::before {content: "";position: absolute;left:0;bottom:0;width: 200%;;border-top: 1px solid #ccc;}
+.section-forums .list-forums__item .thumd-box { grid-column: 1; grid-row: 1 / span 4;}
+.section-forums .list-forums__item .title {}
+.section-forums .list-forums__item .topic {margin-bottom: 3rem;}
+.section-forums .list-forums__item .link-downlaod {width: fit-content;}
+
+/* medium devices  */ 
+@media (max-width: 991.98px) { 
+  .section-forums .list-forums {display: flex;flex-direction: column}
+  .section-forums .list-forums__item::after {content: "";position: absolute;left:0;top:0;width: 100% !important;border-top: 1px solid #ccc}
+  .section-forums .list-forums__item:last-child::before {content: "";position: absolute;left:0;bottom:0;width: 100% !important;border-top: 1px solid #ccc;}
+}
