@@ -1,0 +1,37 @@
+{
+  "files.exclude": {
+    "resources": true
+  },
+  "search.exclude": {
+    ".vscode": true,
+    ".dist": true,
+    "node_modules": true,
+    "node_modules/bootstrap/scss": false,
+    "dist": true,
+    "public": true,
+    "archetypes": true,
+    ".hugo_build.lock": true,
+    "package-lock.json": true,
+    ".prettierignore": true,
+    ".git**": true,
+    "config.**": true,
+    "babel.config.js": true,
+    "**.sh": true,
+    "**/assets/js/libs": true,
+    "static/**/asset": true,
+    "static/**/assets": true
+  },
+  "window.zoomLevel": 0,
+  "git.autoRepositoryDetection": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

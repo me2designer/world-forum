@@ -1,0 +1,32 @@
+/**
+ *
+ *
+ *     getDay() : 1 - 월요일부터 시작, 0 - 일요일
+ *          day 의 입력 양식 yyyy-mm-dd
+ *
+ *
+ */
+
+Number.prototype.getWeekDay = function (date) {
+ 
+  // var day = document.getElementById("day").value;
+  var day = date;
+
+  var splitDay = day.split("-");
+
+  var startYearDay = "1/1/" + splitDay[0];
+  var today = splitDay[1] + "/" + splitDay[2] + "/" + splitDay[0];
+
+  var dt = new Date(startYearDay);
+  var tDt = new Date(today);
+
+  var diffDay = (tDt - dt) / 86400000; // Date 함수 기준 하루를 뭔 초로 나눴는지 모르겠음.
+
+  // 1월 1일부터 현재날자까지 차이에서 7을 나눠서 몇주가 지났는지 확인을 함
+  var weekDay = parseInt(diffDay / 7) + 1;
+
+  // 요일을 기준으로 1월 1일보다 이전 요일이라면 1주가 더 늘었으므로 +1 시켜줌.
+  if (tDt.getDay() < dt.getDay()) weekDay += 1;
+
+  return weekDay;
+};
