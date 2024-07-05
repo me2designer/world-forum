@@ -1,0 +1,25 @@
+# JS
+server.js
+router.js
+assets/js/modules.js
+
+# style
+fonts/
+*.css
+style.scss
+_reset.scss
+_icons.scss
+_variables.scss
+assets/scss/*.scss
+
+# etc
+.git
+*.git
+*.svg
+*bundle*
+files.js
+*min.js
+*min.css
+**/lib**
+/layouts
+/content
