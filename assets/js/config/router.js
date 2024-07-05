@@ -5,7 +5,8 @@
     {
       location: "__COMMON__",
       files: [
-        `/assets/css/base/reset.css`,
+        `/assets/fonts/NanumGothic/NanumGothic.css`,
+        `/assets/css/style.css`,
         `/assets/js/utilities/utilities.module.js`,
         `/assets/js/core/global.js`
       ],

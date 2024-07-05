@@ -52,7 +52,7 @@ input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
 input::-webkit-search-results-decoration{ display:none; }
 
-//오른쪽에 화살표 증가, 감소 버튼 감추기
+/* 오른쪽에 화살표 증가, 감소 버튼 감추기 */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
