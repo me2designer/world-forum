@@ -29,14 +29,14 @@ export * from "./network/checkPreviewParams.js";
 import "./network/getUrlParameterValues.js";
 export * from "./network/getUrlParameterValues.js";
 
+// Device, 웹브러우저 정보 가져오기
+import "./network/getDevice.js";
+export * from "./network/getDevice.js";
+
 /**********************************
  * Interface Utility Functions
  * 인터페이스 관련 유틸리티 함수
  **********************************/
-
-// Device, 웹브러우저 정보 가져오기
-import "./interface/getDevice.js";
-export * from "./interface/getDevice.js";
 
 // 이미지 URL 없으면 .thumb-box 제거
 import "./interface/removeThumbnailBox.js";
@@ -49,3 +49,6 @@ export * from "./interface/handleImageError.js";
 // 이미지가 로드된 후 로딩 인디케이터를 제거
 import "./interface/removeLoadingIndicator.js";
 export * from "./interface/removeLoadingIndicator.js";
+
+// body scroll lock/unlock
+import "./interface/lockBody.js";

@@ -1,14 +1,16 @@
 :root {
   /* Layouts */
   --inner-padding:              0.8rem;
-  --inner-width:                calc(132rem + var(--inner-padding) * 2);
+  --inner-width:                calc(120rem + var(--inner-padding) * 2);    
 
   /* Fonts */
   --font-size:                  1.6rem;
-  --font-family:                "Pretendard", "맑은 고딕", "Malgun Gothic", "돋움", "Dotum", "AppleSDGothicNeo-Light", "Sans-serif", "Tahoma";
+  --font-family:                "NanumGothic", "맑은 고딕", "Malgun Gothic", "돋움", "Dotum", "AppleSDGothicNeo-Light", "Sans-serif", "Tahoma";
   --letter-spacing:             -0.02em;
 
   /* System Colors */ 
+  --color-primary-500 :         #FCAC19;
+
   --color-gray-0:               #ffffff;
   --color-gray-50:              #F9F9F9;
   --color-gray-100:             #F3F3F3;

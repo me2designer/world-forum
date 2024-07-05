@@ -8,7 +8,8 @@
         `/assets/fonts/NanumGothic/NanumGothic.css`,
         `/assets/css/style.css`,
         `/assets/js/utilities/utilities.module.js`,
-        `/assets/js/core/global.js`
+        `/assets/js/core/global.js`,
+        `/assets/js/layouts/HeaderComponent.module.js`
       ],
     },
   ];

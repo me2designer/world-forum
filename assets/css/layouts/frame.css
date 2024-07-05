@@ -26,4 +26,35 @@ body {
 }
 #wrap ~ * {touch-action: pan-y;}
 
+#header {
+  position: relative;  
+  width: 100%;
+  z-index: 30;
+}
 
+#container {
+  position: relative;
+  z-index: 20;
+  min-height: 100%;
+}
+
+#footer {
+  position: relative;
+  z-index: 10;
+  width: 100%;  
+}
+
+.inner {
+  overflow: hidden;
+  position: relative;  
+  width: var(--inner-width);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 var(--inner-padding);
+}
+
+/* medium devices  */ 
+@media (max-width: 991.98px) { 
+  #wrap {min-width:100%}
+  .inner { width: 100%; }
+}

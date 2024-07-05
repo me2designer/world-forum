@@ -3,6 +3,7 @@
 
 /* abstracts & Vendors & Base */
 @import url("abstracts/variables.css");
+@import url("abstracts/utilities.css");
 @import url("base/reset.css");
 
 /* Layout */
