@@ -24,7 +24,7 @@ import "./array/sortDescending.js";
  **********************************/
 
 // 날짜와 시간 관련 유틸리티 함수 (예: 날짜 형식화, 날짜 간격 계산, 날짜 추가/제거 등)
-import "./date/_date.js";
+import "./date/date.js";
 
 // Date to String
 import "./date/dateToStr.js";
