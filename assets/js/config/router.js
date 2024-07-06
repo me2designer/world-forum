@@ -9,7 +9,7 @@
         `/assets/css/style.css`,
         `/assets/js/utilities/utilities.module.js`,
         `/assets/js/core/global.js`,
-        `/assets/js/layouts/HeaderComponent.module.js`
+        `/assets/js/pages/commonPage.module.js`,        
       ],
     },
   ];

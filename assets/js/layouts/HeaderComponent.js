@@ -3,7 +3,7 @@
  **********************************/
 /**
  *
- *  Depth : 대시보드 > Header
+ *  Depth : 공통 > Header
  *
  */
 
@@ -17,10 +17,8 @@ class HeaderComponent extends HTMLElement {
 
   // DOM 렌더링 -----------------
   renderDOM() {
-    this.innerHTML = `
-        <!-- #header -->
-        <header id="header" class="header" role="banner">
-          
+    this.innerHTML = `        
+        <header id="header" class="header" role="banner">          
             <h1 class="header-logo">
               <a class="header-logo__link" href="/">
                 <img class="logo" src="https://placehold.co/270x80" alt="제10차 세계한인정치인포럼" />
@@ -165,8 +163,7 @@ class HeaderComponent extends HTMLElement {
             </nav>
             <div class="gnb-overlay"></div>
             <!-- //GNB -->          
-        </header>
-        <!-- //#header -->
+        </header>        
       `;
   }
 
