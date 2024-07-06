@@ -2,21 +2,32 @@
 @charset "UTF-8";
 
 /****************************************************************************
-    역대포럼 목록
+    역대포럼
 ****************************************************************************/
-.section-forums {position: relative;}
-.section-forums .list-forums {display: grid;grid-template-columns: 1fr 1fr;position: relative;}
-.section-forums .list-forums__item {display: grid;;grid-template-columns: 20rem 1fr; gap: 2rem;;padding: 4rem 0;position: relative;}
-.section-forums .list-forums__item:nth-child(odd)::after {content: "";position: absolute;left:0;top:0;width: 200%;;border-top: 1px solid var(--color-gray-400);}
-.section-forums .list-forums__item:nth-child(odd):last-child::before {content: "";position: absolute;left:0;bottom:0;width: 200%;;border-top: 1px solid var(--color-gray-400);}
-.section-forums .list-forums__item .thumd-box { grid-column: 1; grid-row: 1 / span 4;border: 1px solid var(--color-gray-200);}
-.section-forums .list-forums__item .title {}
-.section-forums .list-forums__item .topic {margin-bottom: 3rem;}
-.section-forums .list-forums__item .link-downlaod {width: fit-content;}
+/* 역대포럼 목록 */
+.cont-past-forums .section-forums {position: relative;}
+.cont-past-forums .section-forums .list-forums {display:grid;grid-template-columns: 1fr 1fr;position: relative;}
+.cont-past-forums .section-forums .list-forums__item {display: grid;grid-template-columns: 20rem 1fr;gap: 2rem;;padding: 4rem 0;position: relative;}
+.cont-past-forums .section-forums .list-forums__item:nth-child(odd)::after {content: "";position: absolute;left:0;top:0;width: 200%;;border-top: 1px solid var(--color-gray-400);}
+.cont-past-forums .section-forums .list-forums__item:nth-child(odd):last-child::before {content: "";position: absolute;left:0;bottom:0;width: 200%;;border-top: 1px solid var(--color-gray-400);}
+.cont-past-forums .section-forums .thumd-box {border: 1px solid var(--color-gray-200);}
+.cont-past-forums .section-forums .content-area {display: flex;flex-direction: column;gap:3rem}
+.cont-past-forums .section-forums .content-area .title {}
+.cont-past-forums .section-forums .content-area .topic {margin-bottom: 3rem;}
+.cont-past-forums .section-forums .content-area .link-downlaod {width: fit-content;}
 
 /* medium devices  */ 
 @media (max-width: 991.98px) { 
-  .section-forums .list-forums {display: flex;flex-direction: column}
-  .section-forums .list-forums__item::after {content: "";position: absolute;left:0;top:0;width: 100% !important;border-top: 1px solid var(--color-gray-400)}
-  .section-forums .list-forums__item:last-child::before {content: "";position: absolute;left:0;bottom:0;width: 100% !important;border-top: 1px solid var(--color-gray-400);}
+  .cont-past-forums .section-forums .list-forums {display: flex;flex-direction: column;}
+  .cont-past-forums .section-forums .list-forums__item {grid-template-columns: 16rem 1fr;}
+  .cont-past-forums .section-forums .list-forums__item::after {content: "";position: absolute;left:0;top:0;width: 100% !important;border-top: 1px solid var(--color-gray-400)}
+  .cont-past-forums .section-forums .list-forums__item:last-child::before {content: "";position: absolute;left:0;bottom:0;width: 100% !important;border-top: 1px solid var(--color-gray-400);}
+  .cont-past-forums .section-forums .thumd-box {}
 }
+
+
+/****************************************************************************
+    사진
+****************************************************************************/
+/* 사진 목록 */
+.cont-photos 
