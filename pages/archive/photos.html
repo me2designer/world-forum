@@ -31,38 +31,22 @@
 
   <body>
     <div id="wrap" style="opacity: 0; visibility: hidden">
+      <!-- #header -->
       <header-component></header-component>
+      <!-- //#header -->
 
-      <main id="container" class="past-forums" role="main">
-        <h2 class="visually-hidden">사진</h2>
-
-        <!-- 상단 비주얼 -->
-        <section class="c-page-visual" style="background-image: url(https://www.adf.kr/home/assets/img/sub_header_05.jpg)">
-          <div class="inner">
-            <header class="c-page-visual-header">
-              <h3 class="c-page-visual-header__title">ARCHIVE</h3>
-            </header>
-          </div>
-        </section>
-        <!-- //상단 비주얼 -->
+      <!-- #container -->
+      <main id="container" class="cont-photos" role="main">
+        <!-- 페이지 상단 비주얼 -->
+        <section-visual-component title="ARCHIVE" background="https://www.adf.kr/home/assets/img/sub_header_03.jpg"></section-visual-component>
+        <!-- //페이지 상단 비주얼 -->
 
         <!-- 페이지 바로가기 -->
-        <section class="c-site-path">
-          <div class="inner"></div>
-        </section>
+        <section-shortcut-component></section-shortcut-component>
         <!-- //페이지 바로가기 -->
 
         <!-- 페이지 제목 -->
-        <section class="c-page-title">
-          <div class="inner">
-            <header class="c-page-title-header">
-              <h3 class="c-page-title-header__title">
-                <span class="txt-kr">사진</span>
-                <span class="txt-en">Photos</span>
-              </h3>
-            </header>
-          </div>
-        </section>
+        <section-page-title-component text-kr="사진" text-en="Photos"></section-page-title-component>
         <!-- //페이지 제목 -->
 
         <!-- 아카이브 공통 탭 메뉴 -->
@@ -70,10 +54,10 @@
           <div class="inner">
             <main class="c-archive-tab-menu-body">
               <ul class="list-tab">
-                <li class="list-tab__item list-tab__item--is-active">
+                <li class="list-tab__item">
                   <a class="link-tab" href="#"><span class="txt">6회차</span></a>
                 </li>
-                <li class="list-tab__item">
+                <li class="list-tab__item list-tab__item--is-active">
                   <a class="link-tab" href="#"><span class="txt">7회차</span></a>
                 </li>
                 <li class="list-tab__item">
@@ -87,10 +71,43 @@
           </div>
         </section>
         <!-- //아카이브 공통 탭 메뉴 -->
+
+        <!-- 사진 목록 -->
+        <section class="section-photos">
+          <div class="inner">
+            <ul class="list-photos">
+              <li class="list-photos__item">
+                <div class="thumd-box">
+                  <img class="img" src="https://placehold.co/330x220/FFFFFF/cccccc" onerror="this.src='/assets/images/noimages/noimage_330x220.jpg'" alt="사진제목" />
+                </div>
+                <div class="content-area">
+                  <p class="title"><span class="clam-1">제목 길어지면 최대 1줄까지 표현됩니다.</span></p>
+                  <div class="summary-area">
+                    <p class="writer">
+                      <i class="icon icon-user" aria-hidden="true"></i>
+                      <span class="txt">관리자</span>
+                    </p>
+                    <p class="date">
+                      <i class="icon icon-clock" aria-hidden="true"></i>
+                      <span class="txt">24.07.07</span>
+                    </p>
+                    <p class="count">
+                      <i class="icon icon-eye" aria-hidden="true"></i>
+                      <span class="txt">541</span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- //사진 목록 -->
       </main>
-      <footer id="footer" class="footer" role="contentinfo">
-        <h1>로고</h1>
-      </footer>
+      <!-- //#container -->
+
+      <!-- #footer -->
+      <footer-component></footer-component>
+      <!-- //#footer -->
     </div>
   </body>
 </html>
