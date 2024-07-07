@@ -28,7 +28,7 @@
     페이지 제목
 ****************************************************************************/
 .c-section-page-title {margin-bottom: 6rem;}
-.c-section-page-title-header { padding: 4rem 0 2rem 0; text-align: center; border-bottom: solid 1px #bfbfbf; }
+.c-section-page-title-header { padding: 4rem 0 2rem 0; text-align: center; border-bottom: solid 1px var(--color-gray-500); }
 .c-section-page-title-header__title .txt-kr {display: block;margin-bottom: 1rem;;font-size: 3.5rem;font-weight: 900;line-height: 1em;}
 .c-section-page-title-header__title .txt-en {display: block;font-size: 2rem;}
 
@@ -55,7 +55,13 @@
   .c-archive-tab-menu .list-tab {display: grid; grid-template-columns: 1fr 1fr;border:0;}
   .c-archive-tab-menu .list-tab__item--all { grid-column: span 2;border-top: 1px solid var(--color-gray-400);border-right: 1px solid var(--color-gray-400);}
   .c-archive-tab-menu .list-tab__item {border-bottom: 1px solid var(--color-gray-400);}
-  .c-archive-tab-menu .list-tab__item:nth-child(1n+1) { border-right: 1px solid var(--color-gray-400) }
-  .c-archive-tab-menu .list-tab__item:nth-child(2n+1) {border-left: 0; border-right: 1px solid var(--color-gray-400); }
-  .c-archive-tab-menu .list-tab__item:nth-child(2n+2):last-child { border-right: 1px solid var(--color-gray-400) }
+  .c-archive-tab-menu .list-tab__item:first-child {border-left: 1px solid var(--color-gray-400);border-top: 1px solid var(--color-gray-400)}
+  .c-archive-tab-menu .list-tab__item:nth-child(2) {border-top: 1px solid var(--color-gray-400)}
+  .c-archive-tab-menu .list-tab__item:nth-child(1n) { border-right: 1px solid var(--color-gray-400) ;border-right: 1px solid var(--color-gray-400) }
+  .c-archive-tab-menu .list-tab__item:nth-child(2n) {border-left: 0; border-right: 1px solid var(--color-gray-400); }
+  .c-archive-tab-menu .list-tab__item:nth-child(2n):last-child { border-right: 1px solid var(--color-gray-400) }
+
+  .c-archive-tab-menu .list-tab__item--all ~ .list-tab__item:nth-child(2) {border-top:0}
+  .c-archive-tab-menu .list-tab__item--all ~ .list-tab__item:nth-child(1n) {border-left: 1px solid var(--color-gray-400)}
+  .c-archive-tab-menu .list-tab__item--all ~ .list-tab__item:nth-child(odd) {border-left:0}
 }

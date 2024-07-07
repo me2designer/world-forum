@@ -5,8 +5,14 @@
     ICONS
 ****************************************************************************/
 /* 공통 */
-.icon {display: inline-block;}
+.icon {display: inline-block;background-position: center center;}
+.icon ~ * {margin-left:0.5rem;}
 
 /* 아이콘 디자인 */
-.icon-finder {width: 2.6rem;height:2.6rem;;background-image: url("/assets/images/icons/finder.png");}
-.icon-user {}
+.icon-finder {width: 2.6rem;height:2.6rem;background-image: url("/assets/images/icons/finder.png");}
+.icon-user {width: 1.6rem;height:1.6rem;background-image: url("/assets/images/icons/user.png");}
+.icon-eye {width: 1.6rem;height:1.6rem;background-image: url("/assets/images/icons/eye.png");}
+.icon-clock {width: 1.6rem;height:1.6rem;background-image: url("/assets/images/icons/clock.png");}
+.icon-mail {width: 1.6rem;height:1.6rem;background-image: url("/assets/images/icons/mail.png");}
+.icon-arrow-up {width: 1.3rem;height:0.7rem;background-image: url("/assets/images/icons/arrow_up.gif");}
+.icon-arrow-down {width: 1.3rem;height:0.7rem;background-image: url("/assets/images/icons/arrow_down.gif");}
