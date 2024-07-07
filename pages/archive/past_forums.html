@@ -81,68 +81,155 @@
         <!-- // 역대포럼 목록 -->
         <section class="section-forums">
           <div class="inner">
-            <ul class="list-forums">
-              <li class="list-forums__item">
-                <div class="thumd-box">
-                  <img class="img" src="" onerror="this.src='/assets/images/noimages/noimage_200x280.jpg'" alt="사진제목" />
+            <header class="section-forums-header mb-20">
+              <fieldset class="form-fieldset" data-fieldset="키워드검색">
+                <legend class="visually-hidden">키워드 검색</legend>
+                <div class="form-row form-search">
+                  <input type="text" placeholder="검색어를 입력해주세요." />
+                  <button class="btn btn-search" type="button" title="검색하기">
+                    <i class="icon icon-finder" aria-hidden="true"></i>
+                  </button>
                 </div>
-                <div class="content-area">
-                  <p class="title">제목</p>
-                  <p class="topic">주제</p>
-                  <a class="link-downlaod" href="#" download="download">
-                    <img class="img" src="/assets/images/pages/btn_pdf_download.gif" alt="PDF 다운로드" />
-                  </a>
-                </div>
-              </li>
-              <li class="list-forums__item">
-                <div class="thumd-box">
-                  <img class="img" src="https://placehold.co/200x280/FFFFFF/cccccc" onerror="this.src='/assets/images/noimages/noimage_200x280.jpg'" alt="사진제목" />
-                </div>
-                <div class="content-area">
-                  <p class="title">제목</p>
-                  <p class="topic">주제</p>
-                  <a class="link-downlaod" href="#" download="download">
-                    <img class="img" src="/assets/images/pages/btn_pdf_download.gif" alt="PDF 다운로드" />
-                  </a>
-                </div>
-              </li>
-              <li class="list-forums__item">
-                <div class="thumd-box">
-                  <img class="img" src="https://placehold.co/200x280/FFFFFF/cccccc" onerror="this.src='/assets/images/noimages/noimage_200x280.jpg'" alt="사진제목" />
-                </div>
-                <div class="content-area">
-                  <p class="title">제목</p>
-                  <p class="topic">주제</p>
-                  <a class="link-downlaod" href="#" download="download">
-                    <img class="img" src="/assets/images/pages/btn_pdf_download.gif" alt="PDF 다운로드" />
-                  </a>
-                </div>
-              </li>
-              <li class="list-forums__item">
-                <div class="thumd-box">
-                  <img class="img" src="https://placehold.co/200x280/FFFFFF/cccccc" onerror="this.src='/assets/images/noimages/noimage_200x280.jpg'" alt="사진제목" />
-                </div>
-                <div class="content-area">
-                  <p class="title">제목</p>
-                  <p class="topic">주제</p>
-                  <a class="link-downlaod" href="#" download="download">
-                    <img class="img" src="/assets/images/pages/btn_pdf_download.gif" alt="PDF 다운로드" />
-                  </a>
-                </div>
-              </li>
-              <li class="list-forums__item">
-                <div class="thumd-box">
-                  <img class="img" src="https://placehold.co/200x280/FFFFFF/cccccc" onerror="this.src='/assets/images/noimages/noimage_200x280.jpg'" alt="사진제목" />
-                </div>
-                <div class="content-area">
-                  <p class="title">제목</p>
-                  <p class="topic">주제</p>
-                  <a class="link-downlaod" href="#" download="download">
-                    <img class="img" src="/assets/images/pages/btn_pdf_download.gif" alt="PDF 다운로드" />
-                  </a>
-                </div>
-              </li>
-            </ul>
+              </fieldset>
+            </header>
+            <main class="section-forums-body">
+              <ul class="list-forums">
+                <li class="list-forums__item">
+                  <div class="thumd-box">
+                    <img class="img" src="" onerror="this.src='/assets/images/noimages/noimage_200x280.jpg'" alt="사진제목" />
+                  </div>
+                  <div class="content-area">
+                    <p class="title">제목</p>
+                    <p class="topic">주제</p>
+                    <a class="link-downlaod" href="#" download="download">
+                      <img class="img" src="/assets/images/pages/btn_pdf_download.gif" alt="PDF 다운로드" />
+                    </a>
+                  </div>
+                </li>
+                <li class="list-forums__item">
+                  <div class="thumd-box">
+                    <img class="img" src="https://placehold.co/200x280/FFFFFF/cccccc" onerror="this.src='/assets/images/noimages/noimage_200x280.jpg'" alt="사진제목" />
+                  </div>
+                  <div class="content-area">
+                    <p class="title">제목</p>
+                    <p class="topic">주제</p>
+                    <a class="link-downlaod" href="#" download="download">
+                      <img class="img" src="/assets/images/pages/btn_pdf_download.gif" alt="PDF 다운로드" />
+                    </a>
+                  </div>
+                </li>
+                <li class="list-forums__item">
+                  <div class="thumd-box">
+                    <img class="img" src="https://placehold.co/200x280/FFFFFF/cccccc" onerror="this.src='/assets/images/noimages/noimage_200x280.jpg'" alt="사진제목" />
+                  </div>
+                  <div class="content-area">
+                    <p class="title">제목</p>
+                    <p class="topic">주제</p>
+                    <a class="link-downlaod" href="#" download="download">
+                      <img class="img" src="/assets/images/pages/btn_pdf_download.gif" alt="PDF 다운로드" />
+                    </a>
+                  </div>
+                </li>
+                <li class="list-forums__item">
+                  <div class="thumd-box">
+                    <img class="img" src="https://placehold.co/200x280/FFFFFF/cccccc" onerror="this.src='/assets/images/noimages/noimage_200x280.jpg'" alt="사진제목" />
+                  </div>
+                  <div class="content-area">
+                    <p class="title">제목</p>
+                    <p class="topic">주제</p>
+                    <a class="link-downlaod" href="#" download="download">
+                      <img class="img" src="/assets/images/pages/btn_pdf_download.gif" alt="PDF 다운로드" />
+                    </a>
+                  </div>
+                </li>
+                <li class="list-forums__item">
+                  <div class="thumd-box">
+                    <img class="img" src="https://placehold.co/200x280/FFFFFF/cccccc" onerror="this.src='/assets/images/noimages/noimage_200x280.jpg'" alt="사진제목" />
+                  </div>
+                  <div class="content-area">
+                    <p class="title">제목</p>
+                    <p class="topic">주제</p>
+                    <a class="link-downlaod" href="#" download="download">
+                      <img class="img" src="/assets/images/pages/btn_pdf_download.gif" alt="PDF 다운로드" />
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </main>
+            <footer class="section-forums-footer">
+              <ol class="c-pagination">
+                <li class="c-pagination__item c-pagination__item--first">
+                  <button class="btn btn-default" type="button" title="이전 10개 페이지" disabled="">
+                    <i class="icon-svg icon-svg-chevrons-left" aria-hidden="true"><<</i>
+                  </button>
+                </li>
+                <li class="c-pagination__item c-pagination__item--prev">
+                  <button class="btn btn-default" type="button" title="이전 페이지" disabled="">
+                    <i class="icon-svg icon-svg-chevron-left" aria-hidden="true"><</i>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default btn--is-active" type="button">
+                    <span class="txt">1</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">2</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">3</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">4</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">5</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">6</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">7</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">8</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">9</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">10</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item c-pagination__item--next">
+                  <button class="btn btn-default" type="button" title="다음 페이지">
+                    <i class="icon-svg icon-svg-chevron-right" aria-hidden="true">></i>
+                  </button>
+                </li>
+                <li class="c-pagination__item c-pagination__item--last">
+                  <button class="btn btn-default" type="button" title="다음 10개 페이지">
+                    <i class="icon-svg icon-svg-chevrons-right" aria-hidden="true">>></i>
+                  </button>
+                </li>
+              </ol>
+            </footer>
           </div>
         </section>
         <!-- // 역대포럼 목록 -->

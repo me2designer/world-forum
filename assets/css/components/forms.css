@@ -1,0 +1,13 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/****************************************************************************
+    Forms
+****************************************************************************/
+/* 공통 */
+.form-row { position: relative; z-index: 1;}
+.form-row input[type="text"] {width: 100%;height: 100%;padding-left:1rem;font-size: 1.4rem;}
+
+/* 키워드 검색 */
+.form-search {display:flex;align-items: center;;width: 20rem;height: 4rem;}
+.form-search input {border-width:1px 0 1px 1px;border-color:var(--color-gray-400);}

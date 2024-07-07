@@ -4,4 +4,9 @@
 /****************************************************************************
     ICONS
 ****************************************************************************/
-.icon.icon-user {}
+/* 공통 */
+.icon {display: inline-block;}
+
+/* 아이콘 디자인 */
+.icon-finder {width: 2.6rem;height:2.6rem;;background-image: url("/assets/images/icons/finder.png");}
+.icon-user {}
