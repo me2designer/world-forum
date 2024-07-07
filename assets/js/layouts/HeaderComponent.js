@@ -61,43 +61,7 @@ class HeaderComponent extends HTMLElement {
                         <span class="txt-kr">오시는 길</span>
                         <span class="txt-en">Directions</span>
                       </a>
-                    </li>
-                    <li class="list-page__item">
-                      <a class="link-page" href="/pages/forum/event_overview.html">
-                        <span class="txt-kr">행사개요</span>
-                        <span class="txt-en">Outline</span>
-                      </a>
-                    </li>
-                    <li class="list-page__item">
-                      <a class="link-page" href="/pages/forum/center_intro.html">
-                        <span class="txt-kr">재외동포협력센터소개</span>
-                        <span class="txt-en">Introduction</span>
-                      </a>
-                    </li>
-                    <li class="list-page__item">
-                      <a class="link-page" href="/pages/forum/directions.html">
-                        <span class="txt-kr">오시는 길</span>
-                        <span class="txt-en">Directions</span>
-                      </a>
-                    </li>
-                    <li class="list-page__item">
-                      <a class="link-page" href="/pages/forum/event_overview.html">
-                        <span class="txt-kr">행사개요</span>
-                        <span class="txt-en">Outline</span>
-                      </a>
-                    </li>
-                    <li class="list-page__item">
-                      <a class="link-page" href="/pages/forum/center_intro.html">
-                        <span class="txt-kr">재외동포협력센터소개</span>
-                        <span class="txt-en">Introduction</span>
-                      </a>
-                    </li>
-                    <li class="list-page__item">
-                      <a class="link-page" href="/pages/forum/directions.html">
-                        <span class="txt-kr">오시는 길</span>
-                        <span class="txt-en">Directions</span>
-                      </a>
-                    </li>
+                    </li>                    
                   </ul>
                 </li>
 
