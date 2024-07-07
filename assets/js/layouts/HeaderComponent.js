@@ -12,6 +12,7 @@ class HeaderComponent extends HTMLElement {
     super();
     this.renderDOM();
     this.initVariables();
+    this.bindEvents();
     this.activateGNBLink();
   }
 
@@ -43,6 +44,42 @@ class HeaderComponent extends HTMLElement {
                     <span class="txt-kr">포럼소개</span>
                   </a>
                   <ul class="list-page">
+                    <li class="list-page__item">
+                      <a class="link-page" href="/pages/forum/event_overview.html">
+                        <span class="txt-kr">행사개요</span>
+                        <span class="txt-en">Outline</span>
+                      </a>
+                    </li>
+                    <li class="list-page__item">
+                      <a class="link-page" href="/pages/forum/center_intro.html">
+                        <span class="txt-kr">재외동포협력센터소개</span>
+                        <span class="txt-en">Introduction</span>
+                      </a>
+                    </li>
+                    <li class="list-page__item">
+                      <a class="link-page" href="/pages/forum/directions.html">
+                        <span class="txt-kr">오시는 길</span>
+                        <span class="txt-en">Directions</span>
+                      </a>
+                    </li>
+                    <li class="list-page__item">
+                      <a class="link-page" href="/pages/forum/event_overview.html">
+                        <span class="txt-kr">행사개요</span>
+                        <span class="txt-en">Outline</span>
+                      </a>
+                    </li>
+                    <li class="list-page__item">
+                      <a class="link-page" href="/pages/forum/center_intro.html">
+                        <span class="txt-kr">재외동포협력센터소개</span>
+                        <span class="txt-en">Introduction</span>
+                      </a>
+                    </li>
+                    <li class="list-page__item">
+                      <a class="link-page" href="/pages/forum/directions.html">
+                        <span class="txt-kr">오시는 길</span>
+                        <span class="txt-en">Directions</span>
+                      </a>
+                    </li>
                     <li class="list-page__item">
                       <a class="link-page" href="/pages/forum/event_overview.html">
                         <span class="txt-kr">행사개요</span>
@@ -169,16 +206,31 @@ class HeaderComponent extends HTMLElement {
 
   // 변수 초기화 -----------------
   initVariables() {
+    this.$wrap = document.querySelector("#wrap");
     this.$header = this.querySelector("#header");
     this.$gnb = this.$header.querySelector("#gnb");
-    this.$gnbLinks = this.$gnb.querySelectorAll(".link-page");
+    this.$gnbItems = this.$gnb.querySelectorAll(".list-gnb__item");
+    this.$gnbLinks = this.$gnb.querySelectorAll(".link-gnb");
+    this.$pageLinks = this.$gnb.querySelectorAll(".link-page");
+    this.$hamburgerButton = this.$header.querySelector(".btn-hamburger-menu");
+  }
+
+  // 사용한 이벤트 리스너 목록 -----------------
+  bindEvents() {
+    this.$hamburgerButton.addEventListener("click", (_event) => this.toggleHamburgerMenu(_event));
+
+    this.$gnbLinks.forEach((_$link) => {
+      _$link.addEventListener("click", this.toggleActiveClass.bind(this));
+      _$link.addEventListener("click", this.disableLinkHandler.bind(this));
+    });
   }
 
   // 현재 페이지에 해당하는 링크 활성화 -----------------
   activateGNBLink() {
+    // 현재 페이지 메뉴 활성화
     const currentPath = location.pathname.replace(/\/$/, "").replace(/\.[^/.]+$/, "");
 
-    this.$gnbLinks.forEach((_link) => {
+    this.$pageLinks.forEach((_link) => {
       const linkPath = new URL(_link.href).pathname.replace(/\/$/, "").replace(/\.[^/.]+$/, "");
 
       if (linkPath === currentPath) {
@@ -187,7 +239,44 @@ class HeaderComponent extends HTMLElement {
         _link.classList.remove("link-page--is-active");
       }
     });
+
+    // [data-gnb-active] 초기화
+    window.addEventListener("resize", () => {
+      const hasDevice = this.$wrap.dataset.targetDevice;
+
+      if (hasDevice === "pc") {
+        this.$wrap.dataset.gnbActive = false;
+        this.$gnbItems.forEach((_$item) => _$item.classList.remove("list-gnb__item--is-active"));
+      }
+    });
   }
+
+  // 토글 햄버거 메뉴 -----------------
+  toggleHamburgerMenu() {
+    const isActive = this.$wrap.dataset.gnbActive === "true";
+
+    if (isActive) {
+      this.$wrap.dataset.gnbActive = false;
+      this.$gnbItems.forEach((_$item) => _$item.classList.remove("list-gnb__item--is-active"));
+    } else {
+      this.$wrap.dataset.gnbActive = true;
+    }
+  }
+
+  // 토글 GNB Active Class
+  toggleActiveClass(_event) {
+    this.$gnbItems.forEach((_$item) => _$item.classList.remove("list-gnb__item--is-active"));
+    _event.currentTarget.closest(".list-gnb__item").classList.add("list-gnb__item--is-active");
+  }
+
+  // 링크 기본 동작 방지 핸들러 -----------------
+  disableLinkHandler = (_event) => {
+    const isActive = this.$wrap.dataset.gnbActive;
+
+    if (isActive.boolean()) {
+      _event.preventDefault();
+    }
+  };
 }
 
 /**********************************
