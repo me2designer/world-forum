@@ -12,11 +12,31 @@
   --letter-spacing:             -0.02em;
 
   /* System Colors */
-  --color-primary-500 :         #FCAC19;
-
-  --color-secondary-500 :       #4573B8;
-  --color-secondary-600 :       #235fa7;
-  --color-secondary-700 :       #1c4b83;
+  --color-primary-50:           #fff7e6;
+  --color-primary-100:          #ffeecd;
+  --color-primary-150:          #ffe6b3;
+  --color-primary-200:          #ffdd99;
+  --color-primary-250:          #ffd580;
+  --color-primary-300:          #ffcc66;
+  --color-primary-400:          #ffc34d;
+  --color-primary-500:          #FCAC19; 
+  --color-primary-600:          #e69b17;
+  --color-primary-700:          #bf8113;
+  --color-primary-800:          #99660f;
+  --color-primary-900:          #734c0b;
+  
+  --color-secondary-50:         #e6f0fb;
+  --color-secondary-100:        #cce1f7;
+  --color-secondary-150:        #b3d2f2;
+  --color-secondary-200:        #99c3ee;
+  --color-secondary-250:        #80b4ea;
+  --color-secondary-300:        #66a5e5;
+  --color-secondary-400:        #4d96e1;
+  --color-secondary-500:        #4573B8; 
+  --color-secondary-600:        #235fa7; 
+  --color-secondary-700:        #1c4b83; 
+  --color-secondary-800:        #15395f;
+  --color-secondary-900:        #0e263b;
 
   --color-gray-0:               #ffffff;
   --color-gray-50:              #F9F9F9;
