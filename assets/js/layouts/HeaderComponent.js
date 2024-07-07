@@ -47,7 +47,7 @@ class HeaderComponent extends HTMLElement {
                     <li class="list-page__item">
                       <a class="link-page" href="/pages/forum/event_overview.html">
                         <span class="txt-kr">행사개요</span>
-                        <span class="txt-en">Outline</span>
+                        <span class="txt-en">Overview</span>
                       </a>
                     </li>
                     <li class="list-page__item">
