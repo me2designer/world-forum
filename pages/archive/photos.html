@@ -79,6 +79,16 @@
               <p class="total-count">총 <span class="number">5</span>개의 자료가 있습니다.</p>
               <fieldset class="form-fieldset ml-auto" data-fieldset="키워드검색">
                 <legend class="visually-hidden">키워드 검색</legend>
+                <!-- 검색조건 -->
+                <div class="form-row form-select" data-row="정렬선택">
+                  <select class="form-select__select pl-10 rounded">
+                    <option value="0" selected>제목</option>
+                    <option value="1">내용</option>
+                    <option value="2">작성자</option>
+                  </select>
+                </div>
+
+                <!-- 키워드 입력 -->
                 <div class="form-row form-search">
                   <input type="text" placeholder="검색어를 입력해주세요." />
                   <button class="btn btn-search" type="button" title="검색하기">
@@ -179,81 +189,87 @@
                 </li>
               </ul>
             </main>
-            <footer class="section-photo-footer">
-              <div class="row">
-                <ol class="c-pagination">
-                  <li class="c-pagination__item c-pagination__item--first">
-                    <button class="btn btn-default" type="button" title="이전 10개 페이지" disabled="">
-                      <i class="icon-svg icon-svg-chevrons-left" aria-hidden="true"><<</i>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item c-pagination__item--prev">
-                    <button class="btn btn-default" type="button" title="이전 페이지" disabled="">
-                      <i class="icon-svg icon-svg-chevron-left" aria-hidden="true"><</i>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item">
-                    <button class="btn btn-default btn--is-active" type="button">
-                      <span class="txt">1</span>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item">
-                    <button class="btn btn-default" type="button">
-                      <span class="txt">2</span>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item">
-                    <button class="btn btn-default" type="button">
-                      <span class="txt">3</span>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item">
-                    <button class="btn btn-default" type="button">
-                      <span class="txt">4</span>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item">
-                    <button class="btn btn-default" type="button">
-                      <span class="txt">5</span>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item">
-                    <button class="btn btn-default" type="button">
-                      <span class="txt">6</span>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item">
-                    <button class="btn btn-default" type="button">
-                      <span class="txt">7</span>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item">
-                    <button class="btn btn-default" type="button">
-                      <span class="txt">8</span>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item">
-                    <button class="btn btn-default" type="button">
-                      <span class="txt">9</span>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item">
-                    <button class="btn btn-default" type="button">
-                      <span class="txt">10</span>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item c-pagination__item--next">
-                    <button class="btn btn-default" type="button" title="다음 페이지">
-                      <i class="icon-svg icon-svg-chevron-right" aria-hidden="true">></i>
-                    </button>
-                  </li>
-                  <li class="c-pagination__item c-pagination__item--last">
-                    <button class="btn btn-default" type="button" title="다음 10개 페이지">
-                      <i class="icon-svg icon-svg-chevrons-right" aria-hidden="true">>></i>
-                    </button>
-                  </li>
-                </ol>
+            <footer class="section-photos-footer">
+              <div class="btn-area">
+                <button class="btn btn-default btn-list" type="button">
+                  <span class="txt">목록보기</span>
+                </button>
+                <button class="btn btn-default btn-write" type="button">
+                  <span class="txt">글쓰기</span>
+                </button>
               </div>
+              <ol class="c-pagination">
+                <li class="c-pagination__item c-pagination__item--first">
+                  <button class="btn btn-default" type="button" title="이전 10개 페이지" disabled="">
+                    <i class="icon-svg icon-svg-chevrons-left" aria-hidden="true"><<</i>
+                  </button>
+                </li>
+                <li class="c-pagination__item c-pagination__item--prev">
+                  <button class="btn btn-default" type="button" title="이전 페이지" disabled="">
+                    <i class="icon-svg icon-svg-chevron-left" aria-hidden="true"><</i>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default btn--is-active" type="button">
+                    <span class="txt">1</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">2</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">3</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">4</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">5</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">6</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">7</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">8</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">9</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">10</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item c-pagination__item--next">
+                  <button class="btn btn-default" type="button" title="다음 페이지">
+                    <i class="icon-svg icon-svg-chevron-right" aria-hidden="true">></i>
+                  </button>
+                </li>
+                <li class="c-pagination__item c-pagination__item--last">
+                  <button class="btn btn-default" type="button" title="다음 10개 페이지">
+                    <i class="icon-svg icon-svg-chevrons-right" aria-hidden="true">>></i>
+                  </button>
+                </li>
+              </ol>
             </footer>
           </div>
         </section>

@@ -1,0 +1,14 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/****************************************************************************
+    Buttons
+****************************************************************************/
+/* 공통 */
+.btn { display: inline-flex; justify-content: center; align-items: center; overflow: hidden; position: relative; z-index: 1; cursor: pointer;}
+.btn .txt {font-size: 1.4rem;}
+
+/* 버튼 디자인 */
+.btn-default {height: 4rem;padding:0 2rem;border:1px solid var(--color-gray-400)}
+.btn-default:hover:not([disabled]) {color:#fff;background-color: var(--color-gray-600);}
+.btn-default[disabled] {cursor: not-allowed !important;color:var(--color-gray-400)}

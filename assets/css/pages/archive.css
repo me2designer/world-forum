@@ -7,19 +7,23 @@
 /* 역대포럼 목록 */
 .cont-past-forums .section-forums {position: relative;}
 .cont-past-forums .section-forums-header {display: flex;align-items:center;margin-bottom: 2rem;}
-.cont-past-forums .section-forums .list-forums {display:grid;grid-template-columns: 1fr 1fr;position: relative;}
-.cont-past-forums .section-forums .list-forums__item {display: grid;grid-template-columns: 20rem 1fr;gap: 2rem;;padding: 4rem 0;position: relative;}
-.cont-past-forums .section-forums .list-forums__item:nth-child(odd)::after {content: "";position: absolute;left:0;top:0;width: 200%;;border-top: 1px solid var(--color-gray-400);}
-.cont-past-forums .section-forums .list-forums__item:nth-child(odd):last-child::before {content: "";position: absolute;left:0;bottom:0;width: 200%;;border-top: 1px solid var(--color-gray-400);}
-.cont-past-forums .section-forums .thumd-box {border: 1px solid var(--color-gray-200);}
-.cont-past-forums .section-forums .content-area {display: flex;flex-direction: column;gap:3rem}
-.cont-past-forums .section-forums .content-area .title {}
-.cont-past-forums .section-forums .content-area .topic {margin-bottom: 3rem;}
-.cont-past-forums .section-forums .content-area .link-downlaod {width: fit-content;}
+.cont-past-forums .section-forums-body .list-forums {display:grid;grid-template-columns: 1fr 1fr;position: relative;}
+.cont-past-forums .section-forums-body .list-forums__item {display: grid;grid-template-columns: 20rem 1fr;gap: 2rem;;padding: 4rem 0;position: relative;}
+.cont-past-forums .section-forums-body .list-forums__item:nth-child(odd)::after {content: "";position: absolute;left:0;top:0;width: 200%;border-top: 1px solid var(--color-gray-400);}
+.cont-past-forums .section-forums-body .list-forums__item:nth-child(odd):last-child::before {content: "";position: absolute;left:0;bottom:0;width: 200%;;border-top: 1px solid var(--color-gray-400);}
+.cont-past-forums .section-forums-body .thumd-box {border: 1px solid var(--color-gray-200);}
+.cont-past-forums .section-forums-body .content-area {display: flex;flex-direction: column;gap:3rem}
+.cont-past-forums .section-forums-body .content-area .title {}
+.cont-past-forums .section-forums-body .content-area .topic {margin-bottom: 3rem;}
+.cont-past-forums .section-forums-body .content-area .link-downlaod {width: fit-content;}
 .cont-past-forums .section-forums-footer {display: flex;align-items: center;justify-content: center;}
 
 /* medium devices  */ 
 @media (max-width: 991.98px) { 
+  .cont-past-forums .section-forums-header {flex-direction:column;align-items: start;}
+  .cont-past-forums .section-forums-header .total-count {margin-bottom:1rem;}
+  .cont-past-forums .section-forums-header .form-fieldset.ml-auto {width: 100%;margin-left: unset;}
+  .cont-past-forums .section-forums-header .form-search {width: 100%;}
   .cont-past-forums .section-forums .list-forums {display: flex;flex-direction: column;}
   .cont-past-forums .section-forums .list-forums__item {grid-template-columns: 16rem 1fr;}
   .cont-past-forums .section-forums .list-forums__item::after {content: "";position: absolute;left:0;top:0;width: 100% !important;border-top: 1px solid var(--color-gray-400)}
@@ -33,16 +37,28 @@
 ****************************************************************************/
 /* 사진 목록 */
 .cont-photos .section-photos-header {display: flex;align-items:center;margin-bottom: 2rem;}
-.cont-photos .section-photos .section-photos-body {}
-.cont-photos .section-photos .list-photos { display: grid; grid-template-columns: repeat(3, 37rem); row-gap: 4rem; justify-content: space-between;}
-.cont-photos .section-photos .list-photos__item { display: flex; flex-direction: column; row-gap: 1.5rem;}
-.cont-photos .section-photos .thumd-box {border: 1px solid var(--color-gray-200);}
-.cont-photos .section-photos .content-area .title {margin-bottom: 1rem;font-size: 1.8rem;font-weight: bold;line-height: 1.4em;}
-.cont-photos .section-photos .content-area .title .year {margin-right:0.5rem;color: #d15700;}
-.cont-photos .section-photos .summary-area {display: flex;}
-
+.cont-photos .section-photos-header .form-fieldset {display:flex;}
+.cont-photos .section-photos-header .form-fieldset .form-select {margin-right:1rem;}
+.cont-photos .section-photos-body {padding:4rem 0;border-top: 1px solid var(--color-gray-400);border-bottom: 1px solid var(--color-gray-400);}
+.cont-photos .section-photos-body .list-photos { display: grid; grid-template-columns: repeat(3, 37rem); row-gap: 4rem; justify-content: space-between;}
+.cont-photos .section-photos-body .list-photos__item { display: flex; flex-direction: column; row-gap: 1.5rem;position: relative;}
+.cont-photos .section-photos-body .thumd-box {border: 1px solid var(--color-gray-200);}
+.cont-photos .section-photos-body .content-area .title {margin-bottom: 1rem;font-size: 1.8rem;font-weight: bold;line-height: 1.4em;}
+.cont-photos .section-photos-body .content-area .title .year {margin-right:0.5rem;color: #d15700;}
+.cont-photos .section-photos-body .summary-area {display: flex;}
+.cont-photos .section-photos-footer {display: flex;align-items: center;justify-content: center;flex-direction: column;padding-top: 2rem;}
+.cont-photos .section-photos-footer .btn-area {display: flex;align-items: center;justify-content: space-between;width: 100%;}
 
 /* medium devices  */ 
 @media (max-width: 991.98px) { 
-  .cont-photos .section-photos .list-photos {display: block;}
+  .cont-photos .section-photos-header {flex-direction:column;align-items: start;}
+  .cont-photos .section-photos-header .total-count {margin-bottom:1rem;}
+  .cont-photos .section-photos-header .form-fieldset {display: flex;flex-direction: column;width: 100%;margin-left: unset;}
+  .cont-photos .section-photos-header .form-fieldset .form-select {width: 100%;margin: 0 0 1rem 0}
+  .cont-photos .section-photos-header .form-fieldset .form-search {width: 100%;}
+  .cont-photos .section-photos-body .list-photos {display: flex;flex-direction: column;row-gap: 8rem;}  
+  .cont-photos .section-photos-body .list-photos__item::after {content: "";position: absolute;left:0;top:-4rem;width: 100%;border-top: 1px solid var(--color-gray-400);}
+  .cont-photos .section-photos-body .list-photos__item:first-child::after {display: none;}
+  .cont-photos .section-photos-body .thumd-box {width: fit-content;margin: 0 auto;}
+  .cont-photos .section-photos-body .content-area .title {font-size: 1.6rem;}  
 }
