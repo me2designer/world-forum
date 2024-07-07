@@ -6,6 +6,9 @@
 @import url("abstracts/utilities.css");
 @import url("base/reset.css");
 
+/* Components */
+@import url("components/icons.css");
+
 /* Layout */
 @import url("layouts/frame.css");
 @import url("layouts/header.css");

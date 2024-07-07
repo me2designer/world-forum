@@ -27,7 +27,7 @@
 #gnb .link-page.link-page--is-active,
 #gnb .link-page:hover {color:var(--color-primary-500)}
 #gnb .link-page .txt-en {font-size: 1.2rem;}
-#gnb .link-page .txt-kr {font-size: 1.5rem; margin-right: 0.5rem;}
+#gnb .link-page .txt-kr {font-size: 1.4rem; margin-right: 0.5rem;}
 
 #header .hamburger-menu {display: none;}
 

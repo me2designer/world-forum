@@ -30,4 +30,15 @@
     사진
 ****************************************************************************/
 /* 사진 목록 */
-.cont-photos 
+.cont-photos .section-photos .list-photos { display: grid; grid-template-columns: repeat(3, 37rem); row-gap: 4rem; justify-content: space-between;}
+.cont-photos .section-photos .list-photos__item { display: flex; flex-direction: column; row-gap: 1.5rem;}
+.cont-photos .section-photos .thumd-box {border: 1px solid var(--color-gray-200);}
+.cont-photos .section-photos .content-area .title {margin-bottom: 1rem;font-size: 1.8rem;font-weight: bold;line-height: 1.4em;}
+.cont-photos .section-photos .content-area .title .year {margin-right:0.5rem;color: #d15700;}
+.cont-photos .section-photos .summary-area {display: flex;}
+
+
+/* medium devices  */ 
+@media (max-width: 991.98px) { 
+  .cont-photos .section-photos .list-photos {display: block;}
+}
