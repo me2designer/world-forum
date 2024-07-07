@@ -10,7 +10,6 @@
 @import url("components/icons.css");
 @import url("components/forms.css");
 @import url("components/buttons.css");
-@import url("components/ui.css");
 
 /* Layout */
 @import url("layouts/frame.css");
@@ -18,5 +17,7 @@
 @import url("layouts/footer.css");
 
 /* Pages */
-@import url("pages/components.css");  
+@import url("pages/components.css");
+@import url("pages/forum.css");
+@import url("pages/intro.css");
 @import url("pages/archive.css");

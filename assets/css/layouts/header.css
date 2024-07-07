@@ -20,14 +20,14 @@
 #gnb .link-gnb::after {content: "";position: absolute;bottom: 0;left: 50%;width: 0;height:1px;background-color: #fff;opacity: 0;;transform: translateX(-50%);transition: width 0.3s, opacity 0.3s;}
 #gnb .list-gnb__item--is-active::after,
 #gnb .list-gnb__item:hover .link-gnb::after {width: 100%;opacity: 1;}
-#gnb .link-gnb .txt-kr {display: block;font-size: 1.3rem; font-weight: bold; }
-#gnb .link-gnb .txt-en {display: block; margin-bottom: 1rem; font-size: 1.8rem; font-weight: 900; line-height: 1em;}
+#gnb .link-gnb .txt-kr {display: block;font-size: 1.3rem;}
+#gnb .link-gnb .txt-en {display: block; margin-bottom: 1rem; font-size: 1.8rem; font-weight:700; line-height: 1em;}
 
 #gnb .list-page {padding: 1.5rem 0}
 #gnb .link-page {display:flex;align-items: center;justify-content: center;height: 2.8rem;text-align: center;;color:#fff; }
 #gnb .link-page.link-page--is-active,
 #gnb .link-page:hover {color:var(--color-primary-500)}
-#gnb .link-page .txt-en {font-size: 1.2rem;}
+#gnb .link-page .txt-en {font-size: 1.2rem;font-weight: 300;}
 #gnb .link-page .txt-kr {font-size: 1.4rem; margin-right: 0.5rem;}
 
 #header .hamburger-menu {display: none;}

@@ -44,7 +44,7 @@
 .cont-photos .section-photos-body .list-photos__item {position: relative}
 .cont-photos .section-photos-body .link-photos {display: flex; flex-direction: column; row-gap: 1.5rem}
 .cont-photos .section-photos-body .thumd-box {border: 1px solid var(--color-gray-200);}
-.cont-photos .section-photos-body .content-area .title {margin-bottom: 1rem;font-size: 1.8rem;font-weight: bold;line-height: 1.4em;}
+.cont-photos .section-photos-body .content-area .title {margin-bottom: 1rem;font-size: 1.8rem;font-weight:600;line-height: 1.4em;}
 .cont-photos .section-photos-body .content-area .title .year {margin-right:0.5rem;color: #d15700;}
 .cont-photos .section-photos-body .summary-area {display: flex;}
 .cont-photos .section-photos-body .summary-area .writer {display: inline-flex;align-items: center;margin-right:1rem;}
@@ -69,7 +69,7 @@
 
 /* 사진 글보기 */
 .cont-photos .section-photos-view-header {}
-.cont-photos .section-photos-view-header__title {padding-bottom:2rem;border-bottom: 1px solid var(--color-gray-400);font-size: 2.4rem;font-weight: bold;}
+.cont-photos .section-photos-view-header__title {padding:0 8rem 2rem 0;border-bottom: 1px solid var(--color-gray-400);font-size: 2.4rem;font-weight: 600;}
 .cont-photos .section-photos-view-header__title .year {margin-right: 0.5rem;}
 .cont-photos .section-photos-view-header .summary-area {display: flex;padding:2rem 0;border-bottom: 1px solid var(--color-gray-400);}
 .cont-photos .section-photos-view-header .summary-area .writer {display: inline-flex;align-items: center;margin-right:1rem;}
@@ -89,6 +89,7 @@
 
 /* medium devices  */ 
 @media (max-width: 991.98px) { 
+  .cont-photos .section-photos-view-header__title {padding-right:0;}
   .cont-photos .section-photos-view-header .summary-area {flex-direction: column;}
   .cont-photos .section-photos-view-header .summary-area > * {padding:0.5rem 0;}
   .cont-photos .section-photos-view-header .summary-area .link-download {margin-left: unset;}  

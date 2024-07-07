@@ -6,7 +6,7 @@
 ****************************************************************************/
 .c-section-visual {height: 37rem;background-size: cover;}
 .c-section-visual-header {position: absolute;left:50%;bottom:8rem;transform: translateX(-50%);}
-.c-section-visual-header__title {font-size: 4rem;font-weight: 900;color: #fff;}
+.c-section-visual-header__title {font-size: 4rem;font-weight: 800;color: #fff;}
 
 /* medium devices  */ 
 @media (max-width: 991.98px) { 
@@ -29,7 +29,7 @@
 ****************************************************************************/
 .c-section-page-title {margin-bottom: 6rem;}
 .c-section-page-title-header { padding: 4rem 0 2rem 0; text-align: center; border-bottom: solid 1px var(--color-gray-500); }
-.c-section-page-title-header__title .txt-kr {display: block;margin-bottom: 1rem;;font-size: 3.5rem;font-weight: 900;line-height: 1em;}
+.c-section-page-title-header__title .txt-kr {display: block;margin-bottom: 1rem;;font-size: 3.5rem;font-weight: 800;line-height: 1em;}
 .c-section-page-title-header__title .txt-en {display: block;font-size: 2rem;}
 
 /* medium devices  */ 
@@ -46,7 +46,7 @@
 .c-archive-tab-menu .list-tab__item:first-child {border-left:0}
 .c-archive-tab-menu .list-tab__item:hover {background-color: var(--color-gray-600);}
 .c-archive-tab-menu .list-tab__item--is-active {background-color: var(--color-secondary-500) !important;}
-.c-archive-tab-menu .link-tab {display:flex;align-items: center;justify-content: center;height:4.6rem;;font-weight: bold;}
+.c-archive-tab-menu .link-tab {display:flex;align-items: center;justify-content: center;height:4.6rem;;font-weight: 500;}
 .c-archive-tab-menu .list-tab__item:hover .link-tab {color: #fff;}
 .c-archive-tab-menu .list-tab__item--is-active .link-tab {color: #fff;}
 
@@ -65,3 +65,22 @@
   .c-archive-tab-menu .list-tab__item--all ~ .list-tab__item:nth-child(1n) {border-left: 1px solid var(--color-gray-400)}
   .c-archive-tab-menu .list-tab__item--all ~ .list-tab__item:nth-child(odd) {border-left:0}
 }
+
+/****************************************************************************
+    페이징
+****************************************************************************/
+/* 기본 스타일 설정 */
+.c-pagination {display: flex;padding: 2rem 0;}
+.c-pagination__item {margin: 0 0.2rem;}
+.c-pagination__item button {width:4rem;height: 4rem;padding:0;;border: 1px solid #ddd;background-color: #fff;}
+.c-pagination__item button.btn--is-active {background-color: #e94b35 !important;color: #fff;border-color: #e94b35 !important;}
+.c-pagination__item--prev button, 
+.c-pagination__item--first button,
+.c-pagination__item--next button, 
+.c-pagination__item--last button {font-family: "NanumGothic";font-size: 1.1rem;font-weight: bold;}
+
+/* medium devices  */ 
+@media (max-width: 991.98px) { 
+    .c-pagination__item:not(.c-pagination__item--prev, .c-pagination__item--first, .c-pagination__item--next, .c-pagination__item--last) {display: none;}    
+  }
+  

@@ -1,0 +1,33 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/****************************************************************************
+    행사개요
+****************************************************************************/
+.cont-forum .section-overview {}
+.cont-forum .section-overview-header {margin-bottom:6rem;}
+.cont-forum .section-overview-header__title {margin-bottom:1.6rem;;font-size:3rem;font-weight:700;text-align: center;}
+.cont-forum .section-overview-header__subtitle {margin-bottom:5rem;;font-size:2rem;font-weight:500;text-align: center;line-height:1em;}
+.cont-forum .section-overview-header__description {max-width:90rem;margin:0 auto;text-align: center; line-height:1.8em;word-break: keep-all;}
+.cont-forum .section-overview-body {display:flex;gap:6rem;}
+.cont-forum .section-overview-body .thumd-box {width:40rem;height:fit-content;border:1px solid var(--color-gray-200);}
+.cont-forum .section-overview-body .list-info {display: flex;flex-direction: column;border-top:1px solid var(--color-gray-800);border-bottom:1px solid var(--color-gray-800)}
+.cont-forum .section-overview-body .list-info__item {display: flex;align-items:center;flex: 1;border-top:1px solid var(--color-gray-200)}
+.cont-forum .section-overview-body .list-info__item:first-child {border-top: 0}
+.cont-forum .section-overview-body .list-info__item:last-child {margin-bottom:0}
+.cont-forum .section-overview-body .list-info__item .title {display: flex;flex-direction:column;justify-content:center;width:13rem;height:100%;;text-align: center;line-height:1.6em;;background-color: var(--color-gray-100);}
+.cont-forum .section-overview-body .list-info__item .title .txt-ko {font-weight:700;}
+.cont-forum .section-overview-body .list-info__item .description {flex:1;padding:2rem 0 2rem 2rem;line-height:1.6em;}
+
+/* medium devices  */ 
+@media (max-width: 991.98px) { 
+  .cont-forum .section-overview-body {flex-direction: column;}
+  .cont-forum .section-overview-body .thumd-box {width:fit-content;margin:0 auto;}
+  .cont-forum .section-overview-body .thumd-box img {height:40rem;}
+  .cont-forum .section-overview-body .list-info {border-bottom:0;}
+  .cont-forum .section-overview-body .list-info__item {flex-direction: column;margin-bottom:4rem;border-top:1px solid var(--color-gray-800)}
+  .cont-forum .section-overview-body .list-info__item .title {display: flex;flex-direction:row ;width: 100%;padding:1rem 0;}
+  .cont-forum .section-overview-body .list-info__item .title .txt-ko {margin-right:1rem;}
+  .cont-forum .section-overview-body .list-info__item .title .txt-en {display: none;}
+  .cont-forum .section-overview-body .list-info__item .description {width:100%;;padding:1rem;border-bottom:1px solid var(--color-gray-200);font-size:1.4rem}
+}

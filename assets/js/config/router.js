@@ -5,6 +5,7 @@
     {
       location: "__COMMON__",
       files: [
+        `/assets/fonts/Pretendard/Pretendard.css`,
         `/assets/fonts/NanumGothic/NanumGothic.css`,
         `/assets/css/style.css`,
         `/assets/js/utilities/utilities.module.js`,
