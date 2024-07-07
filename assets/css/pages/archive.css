@@ -6,7 +6,7 @@
 ****************************************************************************/
 /* 역대포럼 목록 */
 .cont-past-forums .section-forums {position: relative;}
-.cont-past-forums .section-forums-header {display: flex;align-items:center;justify-content: end;}
+.cont-past-forums .section-forums-header {display: flex;align-items:center;margin-bottom: 2rem;}
 .cont-past-forums .section-forums .list-forums {display:grid;grid-template-columns: 1fr 1fr;position: relative;}
 .cont-past-forums .section-forums .list-forums__item {display: grid;grid-template-columns: 20rem 1fr;gap: 2rem;;padding: 4rem 0;position: relative;}
 .cont-past-forums .section-forums .list-forums__item:nth-child(odd)::after {content: "";position: absolute;left:0;top:0;width: 200%;;border-top: 1px solid var(--color-gray-400);}
@@ -32,6 +32,8 @@
     사진
 ****************************************************************************/
 /* 사진 목록 */
+.cont-photos .section-photos-header {display: flex;align-items:center;margin-bottom: 2rem;}
+.cont-photos .section-photos .section-photos-body {}
 .cont-photos .section-photos .list-photos { display: grid; grid-template-columns: repeat(3, 37rem); row-gap: 4rem; justify-content: space-between;}
 .cont-photos .section-photos .list-photos__item { display: flex; flex-direction: column; row-gap: 1.5rem;}
 .cont-photos .section-photos .thumd-box {border: 1px solid var(--color-gray-200);}

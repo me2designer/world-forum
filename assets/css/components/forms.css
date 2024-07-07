@@ -9,5 +9,7 @@
 .form-row input[type="text"] {width: 100%;height: 100%;padding-left:1rem;font-size: 1.4rem;}
 
 /* 키워드 검색 */
-.form-search {display:flex;align-items: center;;width: 20rem;height: 4rem;}
-.form-search input {border-width:1px 0 1px 1px;border-color:var(--color-gray-400);}
+.form-search {display:flex;align-items: center;;width: 25rem;height: 4rem;}
+.form-search input {flex: 1;border-width:1px 0 1px 1px;border-color:var(--color-gray-400);}
+.form-search .btn-search {display: inline-flex;align-items: center;justify-content: center;width: 4rem;height: 4rem;background-color: #D9971D;}
+.form-search .btn-search:active {background-color: #c3770c;}
