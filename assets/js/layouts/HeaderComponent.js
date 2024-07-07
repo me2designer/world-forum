@@ -22,7 +22,7 @@ class HeaderComponent extends HTMLElement {
         <header id="header" class="header" role="banner">          
             <h1 class="header-logo">
               <a class="header-logo__link" href="/">
-                <img class="logo" src="https://placehold.co/270x80" alt="제10차 세계한인정치인포럼" />
+                <img class="logo" src="/assets/images/common/logo.png" alt="제10차 세계한인정치인포럼" />
               </a>
             </h1>
 
