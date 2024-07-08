@@ -9,8 +9,9 @@
 .cont-past-forums .section-forums-header {display: flex;align-items:center;margin-bottom: 2rem;}
 .cont-past-forums .section-forums-body .list-forums {display:grid;grid-template-columns: 1fr 1fr;position: relative;}
 .cont-past-forums .section-forums-body .list-forums__item {display: grid;grid-template-columns: 20rem 1fr;gap: 2rem;;padding: 4rem 0;position: relative;}
-.cont-past-forums .section-forums-body .list-forums__item:nth-child(odd)::after {content: "";position: absolute;left:0;top:0;width: 200%;border-top: 1px solid var(--color-gray-400);}
+.cont-past-forums .section-forums-body .list-forums__item:nth-child(odd)::after {content: "";position: absolute;left:0;top:0;width: 200%;border-top: 1px solid var(--color-gray-200);}
 .cont-past-forums .section-forums-body .list-forums__item:nth-child(odd):last-child::before {content: "";position: absolute;left:0;bottom:0;width: 200%;;border-top: 1px solid var(--color-gray-400);}
+.cont-past-forums .section-forums-body .list-forums__item:first-child::after {border-color:var(--color-gray-400);}
 .cont-past-forums .section-forums-body .thumd-box {border: 1px solid var(--color-gray-200);}
 .cont-past-forums .section-forums-body .content-area {display: flex;flex-direction: column;gap:3rem}
 .cont-past-forums .section-forums-body .content-area .title {}
@@ -26,8 +27,8 @@
   .cont-past-forums .section-forums-header .form-search {width: 100%;}
   .cont-past-forums .section-forums .list-forums {display: flex;flex-direction: column;}
   .cont-past-forums .section-forums .list-forums__item {grid-template-columns: 16rem 1fr;}
-  .cont-past-forums .section-forums .list-forums__item::after {content: "";position: absolute;left:0;top:0;width: 100% !important;border-top: 1px solid var(--color-gray-400)}
-  .cont-past-forums .section-forums .list-forums__item:last-child::before {content: "";position: absolute;left:0;bottom:0;width: 100% !important;border-top: 1px solid var(--color-gray-400);}
+  .cont-past-forums .section-forums .list-forums__item::after {content: "";position: absolute;left:0;top:0;width: 100% !important;border-top: 1px solid var(--color-gray-200)}  
+  .cont-past-forums .section-forums .list-forums__item:last-child::before {content: "";position: absolute;left:0;bottom:0;width: 100% !important;border-top: 1px solid var(--color-gray-900);}
   .cont-past-forums .section-forums .thumd-box {}
 }
 

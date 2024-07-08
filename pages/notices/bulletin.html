@@ -48,6 +48,227 @@
         <!-- 페이지 제목 -->
         <section-page-title-component text-kr="게시판" text-en="Bulletin Board"></section-page-title-component>
         <!-- //페이지 제목 -->
+
+        <!-- 공통 게시판 글 목록 -->
+        <section class="c-section-board">
+          <div class="inner">
+            <header class="c-section-board-header">
+              <p class="total-count">총 <span class="number">5</span>개의 자료가 있습니다.</p>
+              <fieldset class="form-fieldset ml-auto" data-fieldset="키워드검색">
+                <legend class="visually-hidden">키워드 검색</legend>
+                <!-- 검색조건 -->
+                <div class="form-row form-select" data-row="정렬선택">
+                  <select class="form-select__select pl-10 rounded">
+                    <option value="0" selected>제목</option>
+                    <option value="1">내용</option>
+                    <option value="2"><span class="clamp-1">작성자</span></option>
+                  </select>
+                </div>
+
+                <!-- 키워드 입력 -->
+                <div class="form-row form-search">
+                  <input type="text" placeholder="검색어를 입력해주세요." />
+                  <button class="btn btn-search" type="button" title="검색하기">
+                    <i class="icon icon-finder" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </fieldset>
+            </header>
+            <main class="c-section-board-body">
+              <ul class="list-board">
+                <li class="list-board__item">
+                  <a class="link-board" href="bulletin_view.html">
+                    <div class="content-area">
+                      <p class="title">제목 길어지면 PC는 최대 1줄까지, Mobile 최대 2줄까지 표현됩니다. 제목 길어지면 PC는 최대 1줄까지, Mobile 최대 2줄까지 표현됩니다. 제목 길어지면 PC는 최대 1줄까지, Mobile 최대 2줄까지 표현됩니다.</p>
+                      <div class="summary-area">
+                        <p class="writer">
+                          <i class="icon icon-user" aria-hidden="true"></i>
+                          <span class="txt">관리자</span>
+                        </p>
+                        <p class="date">
+                          <i class="icon icon-clock" aria-hidden="true"></i>
+                          <span class="txt">24.07.07</span>
+                        </p>
+                        <p class="count">
+                          <i class="icon icon-eye" aria-hidden="true"></i>
+                          <span class="txt">541</span>
+                        </p>
+                      </div>
+                    </div>
+                    <i class="icon icon-arrow-right-xxl" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-board__item">
+                  <a class="link-board" href="bulletin_view.html">
+                    <div class="content-area">
+                      <p class="title">제목 길어지면 PC는 최대 1줄까지 </p>
+                      <div class="summary-area">
+                        <p class="writer">
+                          <i class="icon icon-user" aria-hidden="true"></i>
+                          <span class="txt">관리자</span>
+                        </p>
+                        <p class="date">
+                          <i class="icon icon-clock" aria-hidden="true"></i>
+                          <span class="txt">24.07.07</span>
+                        </p>
+                        <p class="count">
+                          <i class="icon icon-eye" aria-hidden="true"></i>
+                          <span class="txt">541</span>
+                        </p>
+                      </div>
+                    </div>
+                    <i class="icon icon-arrow-right-xxl" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-board__item">
+                  <a class="link-board" href="bulletin_view.html">
+                    <div class="content-area">
+                      <p class="title">제목 길어지면 PC는 최대 1줄까지, Mobile 최대 2줄까지 표현됩니다. 제목 길어지면 PC는 최대 1줄까지, Mobile 최대 2줄까지 표현됩니다. 제목 길어지면 PC는 최대 1줄까지, Mobile 최대 2줄까지 표현됩니다.</p>
+                      <div class="summary-area">
+                        <p class="writer">
+                          <i class="icon icon-user" aria-hidden="true"></i>
+                          <span class="txt">관리자</span>
+                        </p>
+                        <p class="date">
+                          <i class="icon icon-clock" aria-hidden="true"></i>
+                          <span class="txt">24.07.07</span>
+                        </p>
+                        <p class="count">
+                          <i class="icon icon-eye" aria-hidden="true"></i>
+                          <span class="txt">541</span>
+                        </p>
+                      </div>
+                    </div>
+                    <i class="icon icon-arrow-right-xxl" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-board__item">
+                  <a class="link-board" href="bulletin_view.html">
+                    <div class="content-area">
+                      <p class="title">제목 길어지면 PC는 최대 1줄까지, Mobile 최대 2줄까지 표현됩니다. 제목 길어지면 PC는 최대 1줄까지, Mobile 최대 2줄까지 표현됩니다. 제목 길어지면 PC는 최대 1줄까지, Mobile 최대 2줄까지 표현됩니다.</p>
+                      <div class="summary-area">
+                        <p class="writer">
+                          <i class="icon icon-user" aria-hidden="true"></i>
+                          <span class="txt">관리자</span>
+                        </p>
+                        <p class="date">
+                          <i class="icon icon-clock" aria-hidden="true"></i>
+                          <span class="txt">24.07.07</span>
+                        </p>
+                        <p class="count">
+                          <i class="icon icon-eye" aria-hidden="true"></i>
+                          <span class="txt">541</span>
+                        </p>
+                      </div>
+                    </div>
+                    <i class="icon icon-arrow-right-xxl" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li class="list-board__item">
+                  <a class="link-board" href="bulletin_view.html">
+                    <div class="content-area">
+                      <p class="title">제목 길어지면 PC는 최대 1줄까지, Mobile 최대 2줄까지 표현됩니다. 제목 길어지면 PC는 최대 1줄까지, Mobile 최대 2줄까지 표현됩니다. 제목 길어지면 PC는 최대 1줄까지, Mobile 최대 2줄까지 표현됩니다.</p>
+                      <div class="summary-area">
+                        <p class="writer">
+                          <i class="icon icon-user" aria-hidden="true"></i>
+                          <span class="txt">관리자</span>
+                        </p>
+                        <p class="date">
+                          <i class="icon icon-clock" aria-hidden="true"></i>
+                          <span class="txt">24.07.07</span>
+                        </p>
+                        <p class="count">
+                          <i class="icon icon-eye" aria-hidden="true"></i>
+                          <span class="txt">541</span>
+                        </p>
+                      </div>
+                    </div>
+                    <i class="icon icon-arrow-right-xxl" aria-hidden="true"></i>
+                  </a>
+                </li>                
+            </main>
+            <footer class="c-section-board-footer">
+              <div class="btn-area">
+                <button class="btn btn-default btn-write" type="button">
+                  <span class="txt">글쓰기</span>
+                </button>
+              </div>
+              <ol class="c-pagination">
+                <li class="c-pagination__item c-pagination__item--first">
+                  <button class="btn btn-default" type="button" title="이전 10개 페이지" disabled="">
+                    <i class="icon-svg icon-svg-chevrons-left" aria-hidden="true"><<</i>
+                  </button>
+                </li>
+                <li class="c-pagination__item c-pagination__item--prev">
+                  <button class="btn btn-default" type="button" title="이전 페이지" disabled="">
+                    <i class="icon-svg icon-svg-chevron-left" aria-hidden="true"><</i>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default btn--is-active" type="button">
+                    <span class="txt">1</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">2</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">3</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">4</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">5</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">6</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">7</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">8</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">9</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item">
+                  <button class="btn btn-default" type="button">
+                    <span class="txt">10</span>
+                  </button>
+                </li>
+                <li class="c-pagination__item c-pagination__item--next">
+                  <button class="btn btn-default" type="button" title="다음 페이지">
+                    <i class="icon-svg icon-svg-chevron-right" aria-hidden="true">></i>
+                  </button>
+                </li>
+                <li class="c-pagination__item c-pagination__item--last">
+                  <button class="btn btn-default" type="button" title="다음 10개 페이지">
+                    <i class="icon-svg icon-svg-chevrons-right" aria-hidden="true">>></i>
+                  </button>
+                </li>
+              </ol>
+            </footer>
+          </div>
+        </section>
+        <!-- //공통 게시판 글 목록 -->
       </main>
       <!-- //#container -->
 
