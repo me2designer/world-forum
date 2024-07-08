@@ -26,7 +26,7 @@
     <link rel="icon" href="/assets/images/favicon/favicon-180.png" sizes="180x180" />
 
     <!-- JS -->
-    <script src="/assets/js/config/router.js" defer></script>
+    <script src="/assets/js/config/router.js?v=2" defer></script>
   </head>
 
   <body>
@@ -40,7 +40,7 @@
       <!-- //#header -->
 
       <!-- #container -->
-      <main id="container" class="cont-directions" role="main">
+      <main id="container" class="cont-dirs" role="main">
         <!-- 페이지 바로가기 -->
         <section-shortcut-component></section-shortcut-component>
         <!-- //페이지 바로가기 -->
@@ -48,6 +48,56 @@
         <!-- 페이지 제목 -->
         <section-page-title-component text-kr="오시는 길" text-en="Directions"></section-page-title-component>
         <!-- //페이지 제목 -->
+
+        <!-- 행사장 안내  -->
+        <section class="section-contact">
+          <div class="inner">
+            <main class="section-contact-body">
+              <div class="map"></div>
+              <ul class="list-info">
+                <li class="list-info__item">
+                  <div class="title">
+                    <p class="txt-ko">주소</p>
+                    <p class="txt-en">Address</p>
+                  </div>
+                  <dl class="list-desc">
+                    <dt>도로명 주소</dt>
+                    <dd>서울시 여의대로 108, 페어몬트 앰배서더 서울</dd>
+                    <dt>지번 주소</dt>
+                    <dd>서울특별시 영등포구 여의도동 23-5</dd>
+                  </dl>
+                </li>
+                <li class="list-info__item">
+                  <div class="title">
+                    <p class="txt-ko">오시는 길</p>
+                    <p class="txt-en">Directions</p>
+                  </div>
+                  <dl class="list-desc">
+                    <dt>대중교통 이용 시</dt>
+                    <dd>지하철 5호선 여의도역 3번 출구에서 도보 10분</dd>
+                    <dt>자가용 이용 시</dt>
+                    <dd>여의도 공원 방향으로 진입하여 페어몬트 앰배서더 서울 주차장에 주차하시면 됩니다. <br class="d-none d-md-block" />주차 공간이 협소할 수 있으니, 여의도 공원 주차장도 이용 가능합니다.</dd>
+                  </dl>
+                </li>
+                <li class="list-info__item">
+                  <div class="title">
+                    <p class="txt-ko">문의사항</p>
+                    <p class="txt-en">Contact Information</p>
+                  </div>
+                  <dl class="list-desc">
+                    <dt>대표번호</dt>
+                    <dd>02-3415-0158/0163</dd>
+                    <dt>이메일 주소</dt>
+                    <dd><a href="mailto:forum@okocc.or.kr">forum@okocc.or.kr</a></dd>
+                    <dt>담당자</dt>
+                    <dd>재외동포협력센터 교육·지원부 한지원 과장, 김정선 과장</dd>
+                  </dl>
+                </li>
+              </ul>
+            </main>
+          </div>
+        </section>
+        <!-- //행사장 안내  -->
       </main>
       <!-- //#container -->
 

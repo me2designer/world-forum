@@ -13,6 +13,13 @@
         `/assets/js/pages/commonPage.module.js`,        
       ],
     },
+    {
+      location: "/pages/forum/directions",
+      files: [
+        `https://dapi.kakao.com/v2/maps/sdk.js?autoload=false&appkey=d8b7b6c23aeb36ae0b3a2544ed36cf52`,
+        `/assets/js/pages/forumDirectionsPage.module.js`
+      ],
+    },
   ];
 }
 /*
@@ -117,9 +124,13 @@
     // "src" 값이 문자열인 경우
     function hasStringType(_src, _callback) {
       let script = document.createElement("script");
+      const url = new URL(_src.trim(), window.location.href);
+      const isParams = url.search === "" ? false : url.search
+                  
+      // url.search += isParams ? window.CACHE.replace(/\?/g, '&') : window.CACHE;            
+      script.src = url.toString();
 
-      script.src = _src.trim() + window.CACHE;
-      if (_src.endsWith(".module.js")) {
+      if (_src.includes(".module.js")) {
         script.type = "module";
       }
       script.onload = _callback ? _callback : false;
@@ -129,14 +140,18 @@
     }
 
     // "src" 값이 배열인 경우
-    function hasArrayType(_srcs, _callback) {
+    function hasArrayType(_srcs, _callback) {      
       (async function () {
         for (const [_idx, _src] of _srcs.entries()) {
           await new Promise((resolve) => {
             let script = document.createElement("script");
+            const url = new URL(_src.trim(), window.location.href);
+            const isParams = url.search === "" ? false : url.search;
+                        
+            url.search += isParams ? window.CACHE.replace(/\?/g, '&') : window.CACHE;            
+            script.src = url.toString();
 
-            script.src = _src.trim() + window.CACHE;
-            if (_src.endsWith(".module.js")) {
+            if (_src.includes(".module.js")) {
               script.type = "module";
             }
             script.onload = () => resolve();
@@ -166,7 +181,7 @@
    *  });
    */
 
-  window.loadFiles = async function (_options) {
+  window.loadFiles = async function(_options) {
     const { files, callback } = _options;
     const cssPromises = [];
 
@@ -177,7 +192,7 @@
         const cssPromise = new Promise((_resolve) => {
           window.loadStyle({
             href: file,
-            callback: _resolve,
+            callback: _resolve
           });
         });
         cssPromises.push(cssPromise);
@@ -189,17 +204,18 @@
     for (let idx = 0; idx < files.length; idx++) {
       const file = files[idx];
 
-      if (file.endsWith(".js")) {
+      if (file.endsWith(".js") || file.includes(".js?")) {
         await new Promise((_resolve) => {
           window.loadScript({
             src: file,
-            callback: _resolve,
+            callback: _resolve
           });
         });
       }
     }
     callback?.();
   };
+
 }
 /*
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -208,18 +224,18 @@
   /* Loading Page Resources */
   (() => {
     const url = location.pathname;
-    const hasCommonPath = window.ROUTER.find((_route) => _route.location === "__COMMON__");
+    const hasCommonPath = window.ROUTER.find(_route => _route.location === "__COMMON__");
     const hasCurrentPath = ROUTER.filter((_route) => {
       return Array.isArray(_route.location) ? _route.location.find((_location) => url.includes(_location)) : url.includes(_route.location);
     });
 
-    // commone 리소스 유/무 확인
+    // commone 리소스 유/무 확인    
     if (hasCommonPath) {
       window.loadFiles({
         files: hasCommonPath.files,
         callback: () => {
           if (hasCurrentPath[0]) window.loadFiles({ files: hasCurrentPath[0].files });
-        },
+        }
       });
     } else {
       if (hasCurrentPath[0]) window.loadFiles({ files: hasCurrentPath[0].files });

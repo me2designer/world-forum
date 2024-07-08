@@ -19,8 +19,8 @@
 .cont-forum .section-overview-body .list-info__item .title .txt-ko {font-weight:700;}
 .cont-forum .section-overview-body .list-info__item .description {flex:1;padding:2rem 0 2rem 2rem;line-height:1.6em;}
 
-/* medium devices  */ 
-@media (max-width: 991.98px) { 
+/* medium devices  */
+@media (max-width: 991.98px) {
   .cont-forum .section-overview-body {flex-direction: column;}
   .cont-forum .section-overview-body .thumd-box {width:fit-content;margin:0 auto;}
   .cont-forum .section-overview-body .thumd-box img {height:40rem;}
@@ -30,4 +30,28 @@
   .cont-forum .section-overview-body .list-info__item .title .txt-ko {margin-right:1rem;}
   .cont-forum .section-overview-body .list-info__item .title .txt-en {display: none;}
   .cont-forum .section-overview-body .list-info__item .description {width:100%;;padding:1rem;border-bottom:1px solid var(--color-gray-200);font-size:1.4rem}
+}
+
+/****************************************************************************
+    오시는 길
+****************************************************************************/
+.cont-dirs .section-contact-body .map {width:100%;height:500px;margin-bottom:40px;}
+.cont-dirs .section-contact-body .list-info {display: flex;flex-direction: column;border-top:1px solid var(--color-gray-800);border-bottom:1px solid var(--color-gray-800)}
+.cont-dirs .section-contact-body .list-info__item {display: flex;align-items:center;align-items: stretch;border-top:1px solid var(--color-gray-200)}
+.cont-dirs .section-contact-body .list-info__item:first-child {border-top: 0}
+.cont-dirs .section-contact-body .list-info__item:last-child {margin-bottom:0}
+.cont-dirs .section-contact-body .list-info__item .title {display: flex;flex-direction:column;justify-content:center;width:200px;text-align: center;line-height:1.6em;;background-color: var(--color-gray-100);}
+.cont-dirs .section-contact-body .list-info__item .title .txt-ko {font-weight:700;}
+.cont-dirs .section-contact-body .list-info__item .list-desc {padding: 2rem 0 2rem 2rem; line-height: 1.6em;}
+.cont-dirs .section-contact-body .list-info__item .list-desc dt {font-size:18px;font-weight:700;}
+.cont-dirs .section-contact-body .list-info__item .list-desc dd {margin-bottom:20px}
+
+/* medium devices  */
+@media (max-width: 991.98px) {
+  .cont-dirs .section-contact-body .map {height:300px;}
+  .cont-dirs .section-contact-body .list-info__item {flex-direction: column;margin-bottom:4rem;border-top:1px solid var(--color-gray-800)}
+  .cont-dirs .section-contact-body .list-info__item .title {display: flex;flex-direction:row ;width: 100%;padding:1rem 0;}
+  .cont-dirs .section-contact-body .list-info__item .title .txt-ko {margin-right:1rem;}
+  .cont-dirs .section-contact-body .list-info__item .title .txt-en {display: none;}
+  .cont-dirs .section-contact-body .list-info__item .list-desc {width:100%;;padding:1rem;border-bottom:1px solid var(--color-gray-200);font-size:1.4rem}
 }
