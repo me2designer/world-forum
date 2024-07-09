@@ -21,13 +21,21 @@
 
   window.kakao.maps.load(() => {
     let options = {
-      center: new kakao.maps.LatLng(33.450701, 126.570667),
+      center: new kakao.maps.LatLng(37.526652903082386, 126.92715852659192),
       level: 3,
     };
 
     let map = new kakao.maps.Map($map, options);
     map.setDraggable(false);
     map.setZoomable(false);
+
+    // 지도를 클릭한 위치에 표출할 마커입니다
+    var marker = new kakao.maps.Marker({
+      // 지도 중심좌표에 마커를 생성합니다
+      position: map.getCenter(),
+    });
+    // 지도에 마커를 표시합니다
+    marker.setMap(map);
   });
 }
 /*
