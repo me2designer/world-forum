@@ -6,7 +6,7 @@
 ****************************************************************************/
 .c-section-visual {height: 37rem;background-size: cover;}
 .c-section-visual-header {position: absolute;left:50%;bottom:8rem;transform: translateX(-50%);}
-.c-section-visual-header__title {font-size: 4rem;font-weight: 800;color: #fff;}
+.c-section-visual-header__title {font-size: 4rem;font-weight: 800;color: #fff;text-align: center;white-space: nowrap;}
 
 /* medium devices  */
 @media (max-width: 991.98px) {
