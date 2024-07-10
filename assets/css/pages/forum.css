@@ -33,13 +33,51 @@
 }
 
 /****************************************************************************
-    센터소개
+    협의회 소개
 ****************************************************************************/
+#container.cont-center {padding-bottom:0}
+
+/* 소개글 */
 .cont-center .section-intro {}
-.cont-center .section-intro-header {margin-bottom:6rem;}
-.cont-center .section-intro-header__title {margin-bottom:1.6rem;;font-size:3rem;font-weight:700;text-align: center;}
-.cont-center .section-intro-header__subtitle {margin-bottom:5rem;;font-size:2rem;font-weight:500;text-align: center;line-height:1em;}
-.cont-center .section-intro-header__description {max-width:90rem;margin:0 auto;text-align: center; line-height:1.8em;word-break: keep-all;}
+.cont-center .section-intro-header {margin-bottom:60px;}
+.cont-center .section-intro-header__title {margin-bottom:16px;;font-size:30px;font-weight:700;text-align: center;}
+.cont-center .section-intro-header__subtitle {margin-bottom:50px;;font-size:20px;font-weight:500;text-align: center;line-height:1em;}
+.cont-center .section-intro-header__description {line-height:1.8em;word-break: keep-all;}
+.cont-center .section-intro-header__description p {margin-bottom:20px}
+
+/* 주요 정책 및 역활 */
+.cont-center .section-business {margin-bottom:60px}
+.cont-center .section-business-header__title {margin-bottom:30px;;font-size:26px;font-weight:700;text-align: center;}
+.cont-center .section-business-body {}
+.cont-center .section-business-body .list-business {display: grid;grid-template-columns: repeat(3, minmax(0, 1fr));gap:40px;width: fit-content;margin: 0 auto;}
+.cont-center .section-business-body .list-business__item {}
+.cont-center .section-business-body .content-area {display: flex;flex-direction: column;align-items: center;justify-content: center;width:250px;height:250px;border:1px solid var(--color-gray-200);border-radius:100%;text-align: center;}
+.cont-center .section-business-body .content-area .title {position: relative;margin-bottom:30px;font-size:18px;font-weight:600;line-height: 1em}
+.cont-center .section-business-body .content-area .title:after {content:"";display: block;position: absolute;left:50%;bottom:-8px;width:100%;height:1px;background-color:var(--color-gray-900);transform: translateX(-50%);}
+.cont-center .section-business-body .content-area .description {line-height:1.5em;;word-break: keep-all;}
+
+/* 사진첩 */
+.cont-center .section-photos {background-color: var(--color-gray-50);}
+.cont-center .section-photos .inner {padding:60px 0;}
+.cont-center .section-photos-body .list-photos {display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));row-gap:30px;}
+.cont-center .section-photos-body .list-photos__item {position: relative;;height:400px}
+.cont-center .section-photos-body .list-photos__item .thumd-box {width:100%;height:100%;background-size: cover;}
+
+/* medium devices  */
+@media (max-width: 991.98px) {
+ .cont-center .section-photos .inner {padding: 0;}
+ .cont-center .section-photos-body .list-photos {row-gap:0;}
+ .cont-center .section-photos-body .list-photos__item {height:300px;}
+
+ .cont-center .section-business-body .list-business {grid-template-columns: repeat(2, minmax(0, 1fr))};
+}
+
+/* small devices */
+@media (max-width: 767.98px) {
+ .cont-center .section-business-body .list-business {grid-template-columns:unset;gap:20px;width:100%}
+ .cont-center .section-business-body .content-area {width: unset;height:unset;padding:20px;border-radius:unset;}
+ .cont-center .section-business-body .content-area .title {margin-bottom:20px}
+}
 
 /****************************************************************************
     오시는 길
